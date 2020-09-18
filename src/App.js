@@ -4,7 +4,7 @@ import Providers from './Providers';
 // components
 import { Nav, Footer } from './components';
 // pages
-import { Home } from './pages';
+import { Home, Services } from './pages';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Nav />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/services' exact component={Services} />
       </Switch>
       <Footer />
     </Providers>
